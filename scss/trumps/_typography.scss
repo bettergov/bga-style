@@ -1,0 +1,48 @@
+// Font families
+.serif {
+  font-family: $serif !important;
+}
+
+.sans {
+  font-family: $sans !important;
+}
+
+.condensed {
+  font-family: $condensed !important;
+}
+
+// Emphasis
+.bold {
+  font-weight: bold !important;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+.caps,
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+// Overflow
+.nowrap {
+  white-space: nowrap !important;
+}
+
+.truncate {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+// Lists
+.list-unstyled {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none !important;
+}

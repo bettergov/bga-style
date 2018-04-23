@@ -1,0 +1,19 @@
+.intro {
+  .info p,
+  .info a {
+    color: $bga-medium-gray;
+    font-family: $sans;
+    font-size: 0.9em;
+  }
+
+  .info {
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+    .byline {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}

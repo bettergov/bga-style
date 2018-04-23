@@ -1,0 +1,14 @@
+a {
+  color: $link;
+  &:hover,
+  &:focus {
+    color: $link-hover;
+  }
+}
+
+a,
+a::before,
+a::after,
+button {
+  transition: all 0.25s ease;
+}

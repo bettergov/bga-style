@@ -1,0 +1,15 @@
+// Font families
+@import url('https://use.typekit.net/mqd7hhp.css');
+
+$acumin-pro-condensed: 'Acumin Pro Condensed', 'Helvetica Neue', Helvetica,
+  Arial, sans-serif;
+$acumin-pro: 'Acumin Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$georgia: Georgia, Times, 'Times New Roman', serif;
+
+$condensed: $acumin-pro-condensed;
+$sans: $acumin-pro;
+$serif: $georgia;
+
+// Base font sizes
+$font-size-normal: 18px;
+$font-size-small: 15px;

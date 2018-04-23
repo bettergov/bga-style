@@ -1,0 +1,7 @@
+article.main {
+  width: $max-content-width;
+  max-width: 100%;
+  @include margin-auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

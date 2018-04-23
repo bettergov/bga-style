@@ -1,0 +1,9 @@
+html {
+  font-size: $font-size-small;
+
+  @media (min-width: $min-width-md) {
+    font-size: $font-size-normal;
+  }
+
+  overflow-x: hidden;
+}

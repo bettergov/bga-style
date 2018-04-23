@@ -1,0 +1,30 @@
+// Footer
+footer {
+  background-color: $bga-alt-black;
+  position: relative;
+  font-family: $condensed;
+  text-align: left;
+  padding: 0.5rem 1rem;
+
+  .bga-brand {
+    color: white;
+    font-size: 1.5em;
+  }
+}
+
+// Sticky footer
+// Footer is pinned to bottom, even if the content doesn't take up the whole page
+html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 3em;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3em;
+  width: 100%;
+  overflow: hidden;
+}

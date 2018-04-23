@@ -1,0 +1,23 @@
+.bga-brand {
+  display: flex;
+  align-items: center;
+
+  .tagline {
+    font-family: $condensed;
+    border-left: solid 2px currentColor;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 1.1;
+    font-size: 0.55em;
+
+    &:first-line {
+      font-weight: bold;
+    }
+  }
+
+  .icon--bga-logo::before {
+    margin: 0;
+  }
+}
