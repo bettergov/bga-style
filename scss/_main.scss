@@ -8,11 +8,13 @@
 @import 'https://raw.githubusercontent.com/murtaugh/HTML5-Reset/master/assets/css/reset.css';
 @import 'generic/html';
 
+@import 'elements/figure';
 @import 'elements/headings';
 @import 'elements/link';
 @import 'elements/page';
 @import 'elements/paragraph';
 
+@import 'objects/art';
 @import 'objects/layout';
 
 @import 'components/brand';

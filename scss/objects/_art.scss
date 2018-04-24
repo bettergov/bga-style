@@ -1,0 +1,53 @@
+.art {
+  margin-bottom: 1rem;
+  max-width: 100%;
+
+  &.jumbo {
+    width: 1140px;
+  }
+
+  &.large {
+    width: 770px;
+  }
+
+  &.medium {
+    width: 500px;
+  }
+
+  &.small {
+    width: 330px;
+  }
+
+  &.align-right {
+    float: right;
+    margin-left: 1rem;
+  }
+
+  &.align-left {
+    float: left;
+    margin-right: 1rem;
+  }
+}
+
+.caption {
+  font-family: $sans;
+  font-size: 0.8em;
+  line-height: 1.2;
+  margin-top: 0.25em;
+  color: #555;
+}
+
+.cutline {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.photo-set {
+  display: flex;
+  align-items: center;
+  // flex-wrap: wrap;
+
+  img:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
