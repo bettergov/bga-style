@@ -4,11 +4,23 @@ footer {
   position: relative;
   font-family: $condensed;
   text-align: left;
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .bga-brand {
     color: white;
     font-size: 1.5em;
+  }
+
+  .share {
+    color: white;
+  }
+
+  a {
+    @include clear-link;
   }
 }
 
@@ -17,6 +29,9 @@ footer {
 html {
   position: relative;
   min-height: 100%;
+}
+
+body {
   padding-bottom: 3em;
 }
 

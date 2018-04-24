@@ -9,7 +9,7 @@ nav.global {
   font-family: $sans;
 
   a {
-    // color: $black;
+    @include clear-link;
 
     &:hover,
     &:focus {
@@ -30,10 +30,5 @@ nav.global {
   .icon--bga-logo {
     color: $bga-blue;
     font-size: 2.5em;
-  }
-
-  .share {
-    font-weight: bold;
-    text-transform: uppercase;
   }
 }

@@ -1,8 +1,26 @@
+$highlight: $bga-yellow;
+
+/* We achieve a background animation effect by manipulating the background position.
+See https://codersblock.com/blog/gradient-animation-trick/ */
 a {
-  color: $link;
+  color: currentColor;
+  background-image: linear-gradient(
+    to top,
+    $highlight 0%,
+    $highlight 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: auto 200%;
+  background-position: 0 50%;
+  text-decoration: none;
+  padding: 0.1em 0;
+
   &:hover,
   &:focus {
-    color: $link-hover;
+    color: currentColor;
+    text-decoration: none;
+    background-position: 0 100%;
   }
 }
 
@@ -10,5 +28,5 @@ a,
 a::before,
 a::after,
 button {
-  transition: all 0.25s ease;
+  transition: background-position 0.25s ease;
 }

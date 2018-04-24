@@ -1,0 +1,10 @@
+{
+  "name": "bga-style",
+  "version": "1.0.0",
+  "description": "SCSS styles for BGA.",
+  "main": "index.js",
+  "repository": "git@github.com:bettergov/bga-style.git",
+  "author": "Patrick Judge <pjudge@bettergov.org>",
+  "license": "MIT",
+  "private": true
+}
