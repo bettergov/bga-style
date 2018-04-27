@@ -1,15 +1,159 @@
 .intro {
+  margin-top: 0;
+
+  .hed {
+    @include media('>=desktop') {
+      font-size: 3em;
+    }
+  }
+
+  .dek {
+    font-family: $serif;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    font-size: 1em;
+
+    @include media('>=desktop') {
+      font-size: 1.2em;
+    }
+  }
+
+  .bylines {
+    font-style: italic;
+
+    > a {
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+
   .info {
     p,
     a {
       color: $bga-medium-gray;
       font-family: $sans;
     }
-    font-size: 0.9em;
+    font-size: 0.85em;
+  }
 
-    .byline > a {
-      // text-transform: uppercase;
-      font-weight: 700;
+  > header {
+    margin-top: 1rem;
+  }
+}
+
+.lede-image {
+  position: relative;
+  margin-bottom: 1rem;
+
+  .caption {
+    text-align: right;
+    //   position: absolute;
+    //   bottom: 0.5rem;
+    //   left: 0;
+    //   right: 0;
+    //   color: white;
+    //   // background: rgba(47, 79, 79, 0.7);
+  }
+
+  // .cutline {
+  //   background: rgba(47, 79, 79, 0.7);
+  //   padding: .2rem;
+  // }
+}
+
+// Hero headers
+.header--heroic {
+  position: relative;
+  margin-top: 0 !important;
+
+  .lede-copy {
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  .lede-image {
+    @include full-width;
+
+    .caption {
+      @include fit-inner;
+    }
+  }
+}
+
+.header--top {
+  .lede-copy {
+    top: 2rem;
+  }
+}
+
+.header--center {
+  .lede-copy {
+    text-align: center;
+  }
+}
+
+.header--invert {
+  color: white;
+}
+
+.header--drop-mobile {
+  @include media('<tablet') {
+    .lede-copy {
+      position: relative;
+      color: $bga-alt-black;
+      @include reset-absolute;
+    }
+  }
+}
+
+// Split headers
+.header--split-right,
+.header--split-left {
+  @include full-width;
+  margin-top: 0 !important;
+
+  .caption,
+  .lede-copy {
+    @include fit-inner;
+  }
+
+  @include media('>=tablet') {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .caption,
+    .lede-copy {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .lede-image {
+      align-self: stretch;
+      min-height: 40vw;
+      max-height: 80vh;
+    }
+
+    .lede-image > img {
+      object-fit: cover;
+      object-position: right;
+      height: 100%;
+    }
+
+    .lede-copy {
+      padding: 1rem;
+    }
+  }
+}
+
+.header--split-right {
+  @include media('>=tablet') {
+    flex-direction: row-reverse;
+
+    .caption {
+      text-align: left;
     }
   }
 }

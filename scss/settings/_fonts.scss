@@ -4,12 +4,15 @@
 $acumin-pro-condensed: 'Acumin Pro Condensed', 'Helvetica Neue', Helvetica,
   Arial, sans-serif;
 $acumin-pro: 'Acumin Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$georgia: Georgia, Times, 'Times New Roman', serif;
+$ff-more: ff-more-web-pro, Georgia, Times, 'Times New Roman', serif;
 
 $condensed: $acumin-pro-condensed;
 $sans: $acumin-pro;
-$serif: $georgia;
+$serif: $ff-more;
 
 // Base font sizes
-$font-size-normal: 18px;
+$font-size-normal: 17px;
 $font-size-small: 15px;
+
+// Paragraph line height
+$paragraph-line-height: 1.618;

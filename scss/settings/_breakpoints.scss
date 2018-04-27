@@ -1,5 +1,9 @@
-$min-width-xs: 350px;
-$min-width-sm: 576px;
-$min-width-md: 768px;
-$min-width-lg: 992px;
-$min-width-xl: 1200px;
+$min-width-phone: 640px;
+$min-width-tablet: 768px;
+$min-width-desktop: 1024px;
+
+$breakpoints: (
+  phone: $min-width-phone,
+  tablet: $min-width-tablet,
+  desktop: $min-width-desktop
+);

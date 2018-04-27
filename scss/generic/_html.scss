@@ -1,11 +1,17 @@
 html {
+  color: $bga-alt-black;
   font-size: $font-size-small;
+  font-family: $serif;
 
-  @media (min-width: $min-width-md) {
+  @include media('>=tablet') {
     font-size: $font-size-normal;
   }
 
   overflow-x: hidden;
+}
+
+body {
+  margin: 0;
 }
 
 * {
