@@ -18,3 +18,10 @@
   background: none;
   padding: 0;
 }
+
+// Full width override
+@mixin full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}

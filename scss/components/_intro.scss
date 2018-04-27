@@ -1,14 +1,14 @@
 .intro {
-  .info p,
-  .info a {
-    color: $bga-medium-gray;
-    font-family: $sans;
-    font-size: 0.9em;
-  }
-
   .info {
-    .byline {
-      text-transform: uppercase;
+    p,
+    a {
+      color: $bga-medium-gray;
+      font-family: $sans;
+    }
+    font-size: 0.9em;
+
+    .byline > a {
+      // text-transform: uppercase;
       font-weight: 700;
     }
   }
