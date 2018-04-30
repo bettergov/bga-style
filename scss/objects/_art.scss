@@ -2,22 +2,32 @@
   margin-bottom: 1rem;
   max-width: 100%;
 
+  // Width classes
   &.jumbo {
-    width: 1140px;
+    width: $max-outer-content-width;
   }
 
   &.large {
-    width: 770px;
+    width: $min-width-tablet;
   }
 
   &.medium {
     width: 500px;
+
+    @include media('<tablet') {
+      @include align-center;
+    }
   }
 
   &.small {
     width: 330px;
+
+    @include media('<phone') {
+      @include align-center;
+    }
   }
 
+  // Alignment classes
   &.align-right {
     float: right;
     margin-left: 1rem;
@@ -26,6 +36,33 @@
   &.align-left {
     float: left;
     margin-right: 1rem;
+  }
+
+  // Type classes
+  &.photo {
+    &.large {
+      @include media('<tablet') {
+        @include fit-outer;
+
+        > .caption {
+          @include fit-inner;
+        }
+      }
+    }
+  }
+
+  &.photo-set > .images {
+    display: flex;
+    align-items: center;
+    // flex-wrap: wrap;
+
+    img:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+
+    + .caption {
+      margin-top: 0.75em;
+    }
   }
 }
 
@@ -40,14 +77,4 @@
 .cutline {
   font-size: 0.8em;
   font-weight: 300;
-}
-
-.photo-set {
-  display: flex;
-  align-items: center;
-  // flex-wrap: wrap;
-
-  img:not(:last-child) {
-    margin-right: 0.5rem;
-  }
 }
