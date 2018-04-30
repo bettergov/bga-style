@@ -1,18 +1,18 @@
 .art {
+  width: 100%;
   margin-bottom: 1rem;
-  max-width: 100%;
 
   // Width classes
-  &.jumbo {
-    width: $max-outer-content-width;
+  &.full {
+    max-width: $max-outer-content-width;
   }
 
   &.large {
-    width: $min-width-tablet;
+    max-width: $min-width-tablet;
   }
 
   &.medium {
-    width: 500px;
+    max-width: 500px;
 
     @include media('<tablet') {
       @include align-center;
@@ -20,7 +20,7 @@
   }
 
   &.small {
-    width: 330px;
+    max-width: 330px;
 
     @include media('<phone') {
       @include align-center;
@@ -41,7 +41,7 @@
   // Type classes
   &.photo {
     &.large,
-    &.jumbo {
+    &.full {
       @include media('<tablet') {
         @include fit-outer;
 

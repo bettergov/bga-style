@@ -1,5 +1,5 @@
 .pullquote {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 1rem;
 
   @extend .art.small;
@@ -13,7 +13,7 @@
     line-height: 1.2;
   }
 
-  .speaker {
+  .quote__speaker {
     margin-top: 0.5em;
     font-family: $sans;
     text-transform: uppercase;
@@ -21,7 +21,7 @@
     // color: $bga-medium-gray;
   }
 
-  .role {
+  .quote__role {
     font-family: $sans;
     // color: $bga-medium-gray;
   }

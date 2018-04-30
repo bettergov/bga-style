@@ -5,8 +5,6 @@ p {
   line-height: $paragraph-line-height;
   overflow-wrap: break-word;
   margin: 0 0 1.2rem;
-
-  @include fit-paragraph;
 }
 
 // List
