@@ -1,0 +1,31 @@
+.credits {
+  font-family: $sans;
+  background: #e0e0e0;
+  margin-bottom: 0;
+  padding: 1em 0;
+
+  // @include full-width;
+
+  ul {
+    margin: 0;
+  }
+
+  p {
+    font-family: $sans;
+  }
+
+  .subhed {
+    font-family: $sans;
+    font-size: 1.2em;
+  }
+}
+
+.credits__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+
+  @include media('>=desktop') {
+    flex-direction: row;
+  }
+}

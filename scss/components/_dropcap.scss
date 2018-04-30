@@ -1,0 +1,10 @@
+.dropcap {
+  font-size: calc(2em * (#{$paragraph-line-height} + 0.22)); // Magic number
+  float: left;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.story > p:first-child:first-letter {
+  @extend .dropcap;
+}

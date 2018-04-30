@@ -1,0 +1,28 @@
+.pullquote {
+  max-width: 100%;
+  margin-bottom: 1rem;
+
+  @extend .art.small;
+  @extend .art.align-right;
+
+  @include short-divider;
+
+  .quote {
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.2;
+  }
+
+  .speaker {
+    margin-top: 0.5em;
+    font-family: $sans;
+    text-transform: uppercase;
+    font-weight: bold;
+    // color: $bga-medium-gray;
+  }
+
+  .role {
+    font-family: $sans;
+    // color: $bga-medium-gray;
+  }
+}
