@@ -1,0 +1,15 @@
+.button {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: table;
+  background: #5b7383;
+  color: white;
+  padding: 0.5rem 0.5rem 0.3rem;
+  @include margin-auto;
+  transition: background 0.25s;
+
+  &:hover {
+    background: #0c2635;
+    color: white;
+  }
+}
