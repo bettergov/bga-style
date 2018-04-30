@@ -40,7 +40,8 @@
 
   // Type classes
   &.photo {
-    &.large {
+    &.large,
+    &.jumbo {
       @include media('<tablet') {
         @include fit-outer;
 

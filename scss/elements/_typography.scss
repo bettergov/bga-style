@@ -6,12 +6,7 @@ p {
   overflow-wrap: break-word;
   margin: 0 0 1.2rem;
 
-  @include media('>=tablet') {
-    max-width: 600px;
-  }
-  @include media('>=desktop') {
-    max-width: calc(200% / 3);
-  }
+  @include fit-paragraph;
 }
 
 // List
@@ -75,4 +70,16 @@ h6 {
   line-height: 1.3;
   font-weight: 500;
   letter-spacing: 0.25px;
+}
+
+// Blockquote
+blockquote {
+  @include fit-paragraph;
+  margin-left: 0;
+  margin-right: 0;
+
+  font-family: $sans;
+  background: $bga-light-background;
+  padding: 1em;
+  border-left: 6px solid $bga-light-gray;
 }

@@ -41,6 +41,16 @@
   }
 }
 
+// Fit paragraph
+@mixin fit-paragraph {
+  @include media('>=tablet') {
+    max-width: $paragraph-width-tablet;
+  }
+  @include media('>=desktop') {
+    max-width: $paragraph-width-desktop;
+  }
+}
+
 // Fit inner
 @mixin fit-inner {
   max-width: $max-content-width;
