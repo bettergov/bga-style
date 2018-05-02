@@ -65,6 +65,26 @@
       margin-top: 0.75em;
     }
   }
+
+  &.doc {
+    &.small {
+      display: flex;
+    }
+
+    .doc__link {
+      background: none;
+      margin-right: 1em;
+    }
+
+    .doc__img {
+      box-shadow: 5px 5px 15px #888888;
+
+      &:hover {
+        box-shadow: 5px 5px 20px #888888;
+        opacity: 0.95;
+      }
+    }
+  }
 }
 
 .caption {
