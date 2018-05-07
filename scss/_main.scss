@@ -1,20 +1,20 @@
-@import '~include-media/dist/include-media';
-
+@import 'include-media/dist/include-media';
+// Settings
 @import 'settings/breakpoints';
 @import 'settings/colors';
 @import 'settings/fonts';
 @import 'settings/layout';
-
+// Tools
 @import 'tools/mixins';
-
+// Generic
 @import 'https://raw.githubusercontent.com/murtaugh/HTML5-Reset/master/assets/css/reset.css';
 @import 'generic/html';
-
+// Elements
 @import 'elements/figure';
 @import 'elements/link';
 @import 'elements/page';
 @import 'elements/typography';
-
+// Objects
 @import 'objects/art';
 @import 'objects/button';
 @import 'objects/card';
@@ -24,13 +24,13 @@
 @import 'objects/pullquote';
 @import 'objects/sidebar';
 @import 'objects/story';
-
+// Components
 @import 'components/brand';
 @import 'components/credits';
 @import 'components/dropcap';
 @import 'components/footer';
 @import 'components/intro';
 @import 'components/navigation';
-
+// Trumps
 @import 'trumps/layout';
 @import 'trumps/typography';
