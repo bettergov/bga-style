@@ -7,17 +7,18 @@ nav.global {
   align-items: center;
   font-size: 0.9em;
   font-family: $sans;
-
   a {
     @include clear-link;
-
     &:hover,
     &:focus {
       text-decoration: none;
       opacity: 0.8;
     }
   }
-
+  .navbar-brands {
+    display: flex;
+    align-items: center;
+  }
   .navbar-brand {
     a {
       transition: none;
@@ -26,7 +27,6 @@ nav.global {
       }
     }
   }
-
   .icon--bga-logo {
     color: $bga-blue;
     font-size: 2em;
