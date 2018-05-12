@@ -7,7 +7,7 @@
 // Tools
 @import 'tools/mixins';
 // Generic
-@import 'https://raw.githubusercontent.com/murtaugh/HTML5-Reset/master/assets/css/reset.css';
+@import url('https://raw.githubusercontent.com/murtaugh/HTML5-Reset/master/assets/css/reset.css');
 @import 'generic/html';
 // Elements
 @import 'elements/figure';
