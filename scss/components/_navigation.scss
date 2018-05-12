@@ -33,4 +33,21 @@ nav.global {
     height: 1em;
     width: 2em;
   }
+  .share {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    color: $bga-medium-gray;
+    cursor: pointer;
+    &:hover {
+      color: $bga-dark-gray;
+    }
+  }
+  .share-menu {
+    right: 0;
+    top: 1.9rem;
+    &.active {
+      top: 2.9rem;
+    }
+  }
 }

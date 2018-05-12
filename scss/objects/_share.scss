@@ -1,0 +1,47 @@
+.share-menu {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  z-index: 2;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  position: absolute;
+  font-size: 1.5rem;
+  transition: all .4s;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  a:hover {
+    opacity: 1 !important;
+    i:before {
+      opacity: 1;
+    }
+  }
+  i {
+    background: coral;
+    color: white;
+    padding: .3em .1em .1em;
+    height: 1.6em;
+    width: 1.6em;
+    display: block; // border-radius: 50%;
+    &:before {
+      transition: opacity .4s;
+      opacity: .8;
+    }
+  }
+  .icon--facebook {
+    background: $facebook-blue;
+  }
+  .icon--twitter {
+    background: $twitter-blue;
+  }
+  .icon--email {
+    background: $bga-dark-gray;
+  }
+  .icon--print {
+    background: $bga-medium-gray;
+  }
+}

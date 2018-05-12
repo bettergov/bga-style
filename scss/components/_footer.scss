@@ -5,22 +5,29 @@ footer {
   font-family: $condensed;
   text-align: left;
   padding: 0.5em 1rem;
-
   display: flex;
   justify-content: space-between;
   align-items: last baseline;
-
   .bga-brand {
     color: white;
     font-size: 1.5em;
   }
-
   .share {
     color: white;
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    cursor: pointer;
   }
-
   a {
     @include clear-link;
+  }
+  .share-menu {
+    right: 0;
+    bottom: 2rem;
+    &.active {
+      bottom: 3rem;
+    }
   }
 }
 
