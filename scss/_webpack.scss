@@ -1,5 +1,5 @@
 // This is just a copy of _main.scss that uses webpack tilde import for the include-media dependency
-@import '~include-media/dist/include-media';
+@import 'include-media/dist/include-media';
 // Settings
 @import 'settings/breakpoints';
 @import 'settings/colors';
@@ -23,6 +23,7 @@
 @import 'objects/layout';
 @import 'objects/link';
 @import 'objects/pullquote';
+@import 'objects/share';
 @import 'objects/sidebar';
 @import 'objects/story';
 // Components
