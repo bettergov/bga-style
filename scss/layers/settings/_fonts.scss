@@ -6,9 +6,9 @@ $acumin-pro-condensed: 'Acumin Pro Condensed', 'Helvetica Neue', Helvetica,
 $acumin-pro: 'Acumin Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-more: ff-more-web-pro, Georgia, Times, 'Times New Roman', serif;
 
-$condensed: $acumin-pro-condensed;
-$sans: $acumin-pro;
-$serif: $ff-more;
+$condensed: $acumin-pro-condensed !default;
+$sans: $acumin-pro !default;
+$serif: $ff-more !default;
 
 // Base font sizes
 $font-size-normal: 17px;
