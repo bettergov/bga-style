@@ -8,11 +8,11 @@ $bga-medium-gray: #6e7381;
 $bga-dark-gray: #282d40;
 $bga-alt-black: #121212;
 // Links
-$link: $bga-blue;
-$link-hover: $bga-blue-light;
+$link: $bga-blue !default;
+$link-hover: $bga-blue-light !default;
 // Highlight
-$highlight: rgba(255, 242, 0, 0.7);
-$accent: $bga-yellow;
+$highlight: rgba(255, 242, 0, 0.7) !default;
+$accent: $bga-yellow !default;
 // Social
 $facebook-blue: #3b5998;
 $twitter-blue: #55acee;
