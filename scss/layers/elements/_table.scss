@@ -1,0 +1,65 @@
+$border_gray_dark: $bga-dark-gray;
+$border_gray: $bga-medium-gray;
+$background_gray: $bga-light-background;
+
+table {
+  color: $bga-dark-gray;
+  margin: $spacing-standard 0;
+  font-size: 0.9rem;
+  font-family: $sans;
+  line-height: 1.2;
+  // Remove most spacing between table cells.
+  border-collapse: collapse;
+  border-spacing: 0;
+  // Prevent cramped-looking tables.
+  width: 100%;
+
+  caption {
+    font-family: $condensed;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.25rem;
+    text-align: left;
+  }
+
+  tbody > tr {
+    border-bottom: 1px solid $border_gray;
+
+    &:nth-child(2n + 1) {
+      background: $background_gray;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  td {
+    padding: 0.5rem 0.25rem;
+    vertical-align: top;
+  }
+
+  th {
+    padding: 0.5rem 0.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: left;
+    // text-transform: uppercase;
+  }
+
+  thead {
+    border-bottom: 1px solid $border_gray_dark;
+
+    > th {
+      vertical-align: bottom;
+    }
+  }
+
+  tfoot {
+    border-top: 1px solid $border_gray_dark;
+
+    > th {
+      vertical-align: top;
+    }
+  }
+}
