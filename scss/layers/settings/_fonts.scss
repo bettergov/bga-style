@@ -1,9 +1,9 @@
 // Font families
 @import url('https://use.typekit.net/mqd7hhp.css');
 
-$acumin-pro-condensed: 'Acumin Pro Condensed', 'Helvetica Neue', Helvetica,
-  Arial, sans-serif;
-$acumin-pro: 'Acumin Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$acumin-pro-condensed: acumin-pro-condensed, 'Helvetica Neue', Helvetica, Arial,
+  sans-serif;
+$acumin-pro: acumin-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-more: ff-more-web-pro, Georgia, Times, 'Times New Roman', serif;
 
 $condensed: $acumin-pro-condensed !default;
