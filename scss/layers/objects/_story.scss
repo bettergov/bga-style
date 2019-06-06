@@ -1,3 +1,8 @@
-.story > p {
-  @include fit-paragraph;
+.story > {
+  p,
+  hr,
+  ul,
+  ol {
+    @include fit-paragraph;
+  }
 }

@@ -90,3 +90,8 @@ blockquote {
   padding: 1em;
   border-left: 6px solid $bga-light-gray;
 }
+
+// Horizontal rule
+hr {
+  margin: 2 * $spacing-standard 0;
+}
