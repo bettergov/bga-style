@@ -13,3 +13,7 @@
 .fit-outer.art > .caption {
   @include fit-inner;
 }
+
+.align-center {
+  @include align-center;
+}

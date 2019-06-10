@@ -16,7 +16,7 @@
   }
   .bylines {
     font-style: italic;
-    >a {
+    > a {
       font-weight: bold;
       font-style: normal;
     }
@@ -29,7 +29,7 @@
     }
     font-size: 0.85em;
   }
-  >header {
+  > header {
     margin-top: 1rem;
   }
 }
@@ -54,10 +54,12 @@
 .header--heroic {
   position: relative;
   margin-top: 0 !important;
+
   .lede-copy {
     position: absolute;
     bottom: 2rem;
   }
+
   .lede-image {
     @include full-width;
     .caption {
@@ -75,6 +77,7 @@
 .header--center {
   .lede-copy {
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -120,7 +123,7 @@
       min-height: 40vw;
       max-height: 80vh;
     }
-    .lede-image>img {
+    .lede-image > img {
       object-fit: cover;
       object-position: right;
       height: 100%;
