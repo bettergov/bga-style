@@ -1,0 +1,70 @@
+$details-inactive-color: gray !default;
+$details-active-color: #1a1a1a !default;
+
+@keyframes det {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+details {
+  margin: 3rem 0 1.5rem;
+  position: relative;
+}
+
+// inactive styling of summary
+summary {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+
+  border-top: solid 1px $details-inactive-color;
+  color: $details-inactive-color;
+  transition: color 0.3s ease, border-top-color 0.3s ease;
+
+  cursor: pointer;
+
+  // hide default arrow before
+  list-style-type: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  // draw our own arrow before, so that we can animate it
+  &::before {
+    $details-arrow-size: 0.5rem;
+
+    content: '';
+    position: absolute;
+    right: 100%;
+    margin-top: 0.8ex;
+    width: 0;
+    height: 0;
+    border-top: $details-arrow-size solid transparent;
+    border-bottom: $details-arrow-size solid transparent;
+    border-left: $details-arrow-size solid currentColor;
+    transition: transform 0.1s linear;
+  }
+}
+
+// active styling of summary
+summary:focus,
+summary:hover,
+details[open] > summary {
+  border-top-color: $details-active-color;
+  color: $details-active-color;
+}
+
+details[open] > summary {
+  &::before {
+    transform: rotate(90deg);
+  }
+
+  ~ * {
+    animation: det 0.3s;
+  }
+}
