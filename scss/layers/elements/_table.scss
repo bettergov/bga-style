@@ -1,9 +1,10 @@
-$border_gray_dark: $bga-dark-gray;
-$border_gray: $bga-medium-gray;
-$background_gray: $bga-light-background;
+$table_border_dark: $bga-dark-gray !default;
+$table_border: $bga-medium-gray !default;
+$table_background: $bga-light-background !default;
+$table_text_color: $primary-text-color !default;
 
 table {
-  color: $bga-dark-gray;
+  color: $table_text_color;
   margin: $spacing-standard 0;
   font-size: 0.9rem;
   font-family: $sans;
@@ -21,45 +22,45 @@ table {
     padding: 0.25rem;
     text-align: left;
   }
+}
 
-  tbody > tr {
-    border-bottom: 1px solid $border_gray;
+tbody > tr {
+  border-bottom: 1px solid $table_border;
 
-    &:nth-child(2n + 1) {
-      background: $background_gray;
-    }
-
-    &:last-child {
-      border-bottom: 0;
-    }
+  &:nth-child(2n + 1) {
+    background: $table_background;
   }
 
-  td {
-    padding: 0.5rem 0.25rem;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+td {
+  padding: 0.5rem 0.25rem;
+  vertical-align: top;
+}
+
+th {
+  padding: 0.5rem 0.25rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: left;
+  // text-transform: uppercase;
+}
+
+thead {
+  border-bottom: 1px solid $table_border_dark;
+
+  > th {
+    vertical-align: bottom;
+  }
+}
+
+tfoot {
+  border-top: 1px solid $table_border_dark;
+
+  > th {
     vertical-align: top;
-  }
-
-  th {
-    padding: 0.5rem 0.25rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-align: left;
-    // text-transform: uppercase;
-  }
-
-  thead {
-    border-bottom: 1px solid $border_gray_dark;
-
-    > th {
-      vertical-align: bottom;
-    }
-  }
-
-  tfoot {
-    border-top: 1px solid $border_gray_dark;
-
-    > th {
-      vertical-align: top;
-    }
   }
 }
