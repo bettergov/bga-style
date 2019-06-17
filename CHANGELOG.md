@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Default styling and animations for details/summary elements: `elements/_details.scss`
+- Add overridable variables for primary-text-color, secondary-text-color

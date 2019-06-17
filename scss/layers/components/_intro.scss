@@ -24,7 +24,7 @@
   .info {
     p,
     a {
-      color: $bga-medium-gray;
+      color: $secondary-text-color;
       font-family: $sans;
     }
     font-size: 0.85em;
@@ -92,7 +92,7 @@
   @include media('<tablet') {
     .lede-copy {
       position: relative;
-      color: $bga-alt-black;
+      color: $primary-text-color;
       @include reset-absolute;
     }
   }
