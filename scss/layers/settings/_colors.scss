@@ -7,9 +7,13 @@ $bga-light-gray: #b1b4bd; // TODO Replace grays
 $bga-medium-gray: #6e7381;
 $bga-dark-gray: #282d40;
 $bga-alt-black: #121212;
-// Links
+
+// Text colors
+$primary-text-color: $bga-alt-black !default;
+$secondary-text-color: $bga-medium-gray !default;
 $link: $bga-blue !default;
 $link-hover: $bga-blue-light !default;
+
 // Highlight
 $highlight: rgba(255, 242, 0, 0.7) !default;
 $accent: $bga-yellow !default;
