@@ -1,6 +1,12 @@
 @import 'details';
-@import 'figure';
 @import 'link';
-@import 'page';
 @import 'table';
 @import 'typography';
+
+figure img {
+  width: 100%;
+}
+
+section {
+  margin: 2rem 0;
+}

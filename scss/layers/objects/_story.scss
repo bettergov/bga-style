@@ -2,7 +2,9 @@
   p,
   hr,
   ul,
-  ol {
+  ol,
+  details,
+  blockquote {
     @include fitParagraph;
   }
 }

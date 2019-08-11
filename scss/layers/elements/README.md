@@ -10,15 +10,49 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ### Details
 
-### Figure
+The [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) and [`<summary>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary) elements.
+
+#### Usage
+
+```html
+<details>
+  <summary
+    >I have keys but no doors. I have space but no room. You can enter but can’t
+    leave. What am I?</summary
+  >
+  A keyboard.
+</details>
+```
 
 ### Link
 
-### Page
+The [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) element, [`:link`](https://developer.mozilla.org/en-US/docs/Web/CSS/:link) and [`:visited`](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited) variants.
 
 ### Table
 
+The [`<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) element and its children.
+
+#### Usage
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">The table header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The table body</td>
+      <td>with two columns</td>
+    </tr>
+  </tbody>
+</table>
+```
+
 ### Typography
+
+Typographic elements, including paragraphs, lists, headings and blockquotes.
 
 ---
 

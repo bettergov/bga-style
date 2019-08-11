@@ -1,10 +1,10 @@
-$table_border_dark: $dark-gray !default;
-$table_border: $medium-gray !default;
-$table_background: $off-white !default;
-$table_text_color: $primary-text-color !default;
+$table-border-dark: $dark-gray !default;
+$table-border: $medium-gray !default;
+$table-background: $off-white !default;
+$table-text-color: $primary-text-color !default;
 
 table {
-  color: $table_text_color;
+  color: $table-text-color;
   margin: $spacing-standard 0;
   font-size: 0.9rem;
   font-family: $font-family-sans;
@@ -25,10 +25,10 @@ table {
 }
 
 tbody > tr {
-  border-bottom: 1px solid $table_border;
+  border-bottom: 1px solid $table-border;
 
   &:nth-child(2n + 1) {
-    background: $table_background;
+    background: $table-background;
   }
 
   &:last-child {
@@ -50,7 +50,7 @@ th {
 }
 
 thead {
-  border-bottom: 1px solid $table_border_dark;
+  border-bottom: 1px solid $table-border-dark;
 
   > th {
     vertical-align: bottom;
@@ -58,7 +58,7 @@ thead {
 }
 
 tfoot {
-  border-top: 1px solid $table_border_dark;
+  border-top: 1px solid $table-border-dark;
 
   > th {
     vertical-align: top;
