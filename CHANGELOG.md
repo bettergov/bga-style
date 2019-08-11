@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Import from `_.scss` inside each layer directory instead of a file outside. (e.g. from `layers/components/_.scss` instead of `layers/_components.scss`)
 - Renamed variable `$bga-light-background` to `$bga-off-white`
+- Significant overhaul of `layers/elements/_link.scss`
 
 ## [1.1.0] - 2019-07-26
 
