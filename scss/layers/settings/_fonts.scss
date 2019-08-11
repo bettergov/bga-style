@@ -1,6 +1,4 @@
 // Font families
-@import url('https://use.typekit.net/mqd7hhp.css');
-
 $acumin-pro-condensed: acumin-pro-condensed, 'Helvetica Neue', Helvetica, Arial,
   sans-serif;
 $acumin-pro: acumin-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -11,8 +9,9 @@ $sans: $acumin-pro !default;
 $serif: $ff-more !default;
 
 // Base font sizes
-$font-size-normal: 17px;
-$font-size-small: 15px;
+// - Use percentages relative to 16px to account for browser font-size preferences
+$font-size-normal: (18 / 16) * 100% !default;
+$font-size-small: (16 / 16) * 100% !default;
 
 // Paragraph line height
 $paragraph-line-height: 1.618;
