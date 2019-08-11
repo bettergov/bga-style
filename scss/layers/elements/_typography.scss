@@ -86,7 +86,7 @@ blockquote {
   margin: 0 0 $spacing-standard;
 
   font-family: $sans;
-  background: $bga-light-background;
+  background: $bga-off-white;
   padding: 1em;
   border-left: 6px solid $bga-light-gray;
 }
@@ -98,7 +98,7 @@ hr {
 
 // Preformatted
 pre {
-  background: $bga-light-background;
+  background: $bga-off-white;
   border: 5px double desaturate($accent, 50%);
   padding: 2em;
   white-space: pre-wrap;

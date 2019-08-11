@@ -19,5 +19,5 @@ body {
 }
 
 ::selection {
-  background: $highlight; /* WebKit/Blink Browsers */
+  background: $selection-color; /* WebKit/Blink Browsers */
 }
