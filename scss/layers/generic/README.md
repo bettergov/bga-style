@@ -8,7 +8,11 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ### Reset
 
+Reset styles using declarations copied from [HTML 5 Reset](http://html5reset.org/).
+
 ### HTML
+
+Set up some basic styles for html and body.
 
 ---
 

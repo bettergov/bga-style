@@ -6,8 +6,6 @@ html {
   @include media('>=tablet') {
     font-size: $font-size-large;
   }
-
-  overflow-x: hidden;
 }
 
 body {
