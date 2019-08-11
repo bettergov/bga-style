@@ -6,16 +6,16 @@
     max-width: 100%;
   }
 
-  background: linear-gradient(to bottom, $bga-light-gray, transparent 90%);
+  background: linear-gradient(to bottom, $light-gray, transparent 90%);
   padding: 1rem;
   font-size: 0.9em;
 
   .subhed {
-    font-family: $condensed;
+    font-family: $font-family-condensed;
   }
 
   .expand {
-    font-family: $sans;
+    font-family: $font-family-sans;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.9em;

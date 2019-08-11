@@ -1,13 +1,13 @@
-$table_border_dark: $bga-dark-gray !default;
-$table_border: $bga-medium-gray !default;
-$table_background: $bga-off-white !default;
+$table_border_dark: $dark-gray !default;
+$table_border: $medium-gray !default;
+$table_background: $off-white !default;
 $table_text_color: $primary-text-color !default;
 
 table {
   color: $table_text_color;
   margin: $spacing-standard 0;
   font-size: 0.9rem;
-  font-family: $sans;
+  font-family: $font-family-sans;
   line-height: 1.2;
   // Remove most spacing between table cells.
   border-collapse: collapse;
@@ -16,7 +16,7 @@ table {
   width: 100%;
 
   caption {
-    font-family: $condensed;
+    font-family: $font-family-condensed;
     font-size: 1rem;
     font-weight: bold;
     padding: 0.25rem;

@@ -1,6 +1,6 @@
-$min-width-phone: 640px;
-$min-width-tablet: 768px;
-$min-width-desktop: 1024px;
+$min-width-phone: 640px !default;
+$min-width-tablet: 768px !default;
+$min-width-desktop: 1024px !default;
 
 $breakpoints: (
   phone: $min-width-phone,

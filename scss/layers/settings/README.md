@@ -10,11 +10,35 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ### Breakpoints
 
+Defines breakpoints for use with [`include-media`](https://include-media.com/).
+
 ### Colors
 
-### Fonts
+Defines global colors.
 
 ### Layout
+
+Define variables for use with layout, including:
+
+- `$max-content-width`
+- `$desktop-max-content-width`
+- `$spacing-standard`
+
+### Typography
+
+Define variables for use with typography, including:
+
+- Font families:
+  - `$font-family-condensed`
+  - `$font-family-sans`
+  - `$font-family-serif`
+- Font sizes:
+  - `$font-size-large`
+  - `$font-size-normal`
+- Paragraph properties:
+  - `$paragraph-line-height`
+  - `$paragraph-width-tablet`
+  - `$paragraph-width-desktop`
 
 ---
 

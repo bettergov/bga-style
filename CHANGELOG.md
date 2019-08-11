@@ -16,9 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Import from `_.scss` inside each layer directory instead of a file outside. (e.g. from `layers/components/_.scss` instead of `layers/_components.scss`)
-- Renamed variable `$bga-light-background` to `$bga-off-white`
+- Renamed variable `$bga-light-background` to `$off-white`
 - Significant overhaul of `layers/elements/link`
 - Set html font-size using percentages
+- Renamed lots of variables in `layers/settings`
 
 ### Deleted
 

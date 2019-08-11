@@ -4,14 +4,14 @@ $acumin-pro-condensed: acumin-pro-condensed, 'Helvetica Neue', Helvetica, Arial,
 $acumin-pro: acumin-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-more: ff-more-web-pro, Georgia, Times, 'Times New Roman', serif;
 
-$condensed: $acumin-pro-condensed !default;
-$sans: $acumin-pro !default;
-$serif: $ff-more !default;
+$font-family-condensed: $acumin-pro-condensed !default;
+$font-family-sans: $acumin-pro !default;
+$font-family-serif: $ff-more !default;
 
 // Base font sizes
 // - Use percentages relative to 16px to account for browser font-size preferences
-$font-size-normal: (18 / 16) * 100% !default;
-$font-size-small: (16 / 16) * 100% !default;
+$font-size-normal: (16 / 16) * 100% !default;
+$font-size-large: (18 / 16) * 100% !default;
 
 // Paragraph line height
 $paragraph-line-height: 1.618;

@@ -1,6 +1,6 @@
 // Paragraph
 p {
-  font-family: $serif;
+  font-family: $font-family-serif;
   font-size: 1em;
   line-height: $paragraph-line-height;
   overflow-wrap: break-word;
@@ -26,14 +26,14 @@ li {
 h1,
 h2,
 h3 {
-  font-family: $serif;
+  font-family: $font-family-serif;
   margin: 0 0 $spacing-standard;
 }
 
 h4,
 h5,
 h6 {
-  font-family: $sans;
+  font-family: $font-family-sans;
   margin: 0 0 $spacing-standard;
 }
 
@@ -85,10 +85,10 @@ blockquote {
   @include fit-paragraph;
   margin: 0 0 $spacing-standard;
 
-  font-family: $sans;
-  background: $bga-off-white;
+  font-family: $font-family-sans;
+  background: $off-white;
   padding: 1em;
-  border-left: 6px solid $bga-light-gray;
+  border-left: 6px solid $light-gray;
 }
 
 // Horizontal rule
@@ -98,7 +98,7 @@ hr {
 
 // Preformatted
 pre {
-  background: $bga-off-white;
+  background: $off-white;
   border: 5px double desaturate($accent, 50%);
   padding: 2em;
   white-space: pre-wrap;

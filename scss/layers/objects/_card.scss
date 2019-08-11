@@ -2,16 +2,16 @@
   width: 100%;
   margin-bottom: 1rem;
 
-  background: $bga-off-white;
+  background: $off-white;
   padding: 1rem;
-  border-top: 4px solid $bga-light-gray;
+  border-top: 4px solid $light-gray;
   font-size: 0.95em;
 
   @extend .art.small;
   @extend .art.align-right;
 
   > * {
-    font-family: $sans;
+    font-family: $font-family-sans;
 
     &:last-child {
       margin-bottom: 0;

@@ -6,7 +6,7 @@ nav.global {
   justify-content: space-between;
   align-items: center;
   font-size: 0.9em;
-  font-family: $sans;
+  font-family: $font-family-sans;
   a {
     @include clear-link;
     &:hover,
@@ -37,10 +37,10 @@ nav.global {
     border: none;
     background: none;
     font-size: 1.2em;
-    color: $bga-medium-gray;
+    color: $medium-gray;
     cursor: pointer;
     &:hover {
-      color: $bga-dark-gray;
+      color: $dark-gray;
     }
   }
   .share-menu {

@@ -1,7 +1,7 @@
 .credits {
-  font-family: $sans;
-  background: $bga-off-white;
-  border-top: 4px solid $bga-light-gray;
+  font-family: $font-family-sans;
+  background: $off-white;
+  border-top: 4px solid $light-gray;
   margin-bottom: 0;
   padding: 1em 0;
 
@@ -16,11 +16,11 @@
   }
 
   p {
-    font-family: $sans;
+    font-family: $font-family-sans;
   }
 
   .subhed {
-    font-family: $sans;
+    font-family: $font-family-sans;
     font-size: 1.2em;
   }
 }

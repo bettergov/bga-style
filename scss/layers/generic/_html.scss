@@ -1,10 +1,10 @@
 html {
   color: $primary-text-color;
-  font-size: $font-size-small;
-  font-family: $serif;
+  font-size: $font-size-normal;
+  font-family: $font-family-serif;
 
   @include media('>=tablet') {
-    font-size: $font-size-normal;
+    font-size: $font-size-large;
   }
 
   overflow-x: hidden;

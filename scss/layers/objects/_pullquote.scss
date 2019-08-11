@@ -15,14 +15,14 @@
 
   .quote__speaker {
     margin-top: 0.5em;
-    font-family: $sans;
+    font-family: $font-family-sans;
     text-transform: uppercase;
     font-weight: bold;
     // color: $secondary-text-color;
   }
 
   .quote__role {
-    font-family: $sans;
+    font-family: $font-family-sans;
     // color: $secondary-text-color;
   }
 }
