@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Renamed mixins in `layers/tools` to use camelCase
 - Moved button and headings from `layers/objects` to `layers/elements`
 - Moved alignment, width helpers to `layers/trumps`
+- Moved several partials from `layers/objects` to `layers/components`
 
 ### Deleted
 

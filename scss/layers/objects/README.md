@@ -6,25 +6,13 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ## In this layer
 
-### Art
+### Container
 
-### Button
-
-### Card
-
-### Headings
-
-### Layout
-
-### Link
-
-### Pullquote
-
-### Share
-
-### Sidebar
+A container for the page; supplies padding, margins and width.
 
 ### Story
+
+A container for a story; applies `@include fitParagraph` to particular selectors.
 
 ---
 

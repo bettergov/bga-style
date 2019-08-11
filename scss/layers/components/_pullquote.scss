@@ -2,9 +2,6 @@
   width: 100%;
   margin-bottom: 1rem;
 
-  @extend .art.small;
-  @extend .art.align-right;
-
   @include shortDivider;
 
   .quote {

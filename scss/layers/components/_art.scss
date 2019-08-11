@@ -1,0 +1,59 @@
+// Photo
+.photo {
+  @include media('<tablet') {
+    @include fitOuter;
+
+    .caption {
+      @include fitInner;
+    }
+  }
+}
+
+// Photo set
+.photo-set > .images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  img:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  + .caption {
+    margin-top: 0.75em;
+  }
+}
+
+// Document
+.doc {
+  &.small {
+    display: flex;
+  }
+
+  .doc__link {
+    background: none;
+    margin-right: 1em;
+  }
+
+  .doc__img {
+    box-shadow: 5px 5px 15px #888888;
+
+    &:hover {
+      box-shadow: 5px 5px 20px #888888;
+      opacity: 0.95;
+    }
+  }
+}
+
+.caption {
+  font-family: $font-family-sans;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  margin-top: 0.25em;
+  color: $secondary-text-color;
+}
+
+.cutline {
+  font-size: 0.8rem;
+  font-weight: 300;
+}

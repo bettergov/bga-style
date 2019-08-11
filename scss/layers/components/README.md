@@ -8,7 +8,11 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ## In this layer
 
+### Art
+
 ### Brand
+
+### Card
 
 ### Credits
 
@@ -18,7 +22,15 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ### Intro
 
+### Link
+
 ### Navigation
+
+### Pullquote
+
+### Share
+
+### Sidebar
 
 ---
 

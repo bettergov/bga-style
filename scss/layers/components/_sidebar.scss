@@ -1,7 +1,4 @@
 .sidebar {
-  @extend .art.small;
-  @extend .art.align-right;
-
   @include media('<phone') {
     max-width: 100%;
   }

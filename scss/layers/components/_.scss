@@ -1,6 +1,14 @@
+@import 'art';
 @import 'brand';
+@import 'card';
 @import 'credits';
 @import 'dropcap';
 @import 'footer';
 @import 'intro';
+@import 'link';
 @import 'navigation';
+@import 'pullquote';
+
+.main-contents {
+  @extend .page-container;
+}
