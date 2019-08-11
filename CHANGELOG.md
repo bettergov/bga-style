@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added variables `$background-color` and `$selection-color`
 - Docs!
+- Made the package easier to import by defining `sass` and `style` in `package.json`
 
 ### Changed
 
@@ -22,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Deleted
 
 - Deleted typekit loading from `layers/settings/fonts`; this should be handled in the project itself
+- Deleted `scss/webpack.scss` — redundant
 
 ## [1.1.0] - 2019-07-26
 

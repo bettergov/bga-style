@@ -9,7 +9,10 @@ Styles to jumpstart your BGA page, built in SCSS, modeled after [Inverted Triang
 @import url('https://use.typekit.net/mqd7hhp.css');
 
 // Load BGA styles
-@import '~bga-style/scss/webpack';
+@import '~bga-style/scss/main';
+
+// Or, resolving from properties sass or style in package.json
+@import '~bga-style';
 ```
 
 ## Structure
