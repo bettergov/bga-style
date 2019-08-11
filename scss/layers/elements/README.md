@@ -8,6 +8,10 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ## In this layer
 
+### Button
+
+The [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) element.
+
 ### Details
 
 The [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) and [`<summary>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary) elements.
@@ -23,6 +27,10 @@ The [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/deta
   A keyboard.
 </details>
 ```
+
+### Headings
+
+Heading elements `<h1>` through `<h6>`.
 
 ### Link
 
@@ -52,7 +60,7 @@ The [`<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
 
 ### Typography
 
-Typographic elements, including paragraphs, lists, headings and blockquotes.
+Typographic elements, including paragraphs, lists and blockquotes.
 
 ---
 
