@@ -1,0 +1,29 @@
+// Width classes
+.is-full,
+.full-width {
+  @include fullWidth;
+}
+
+.is-jumbo {
+  max-width: $max-outer-content-width;
+}
+
+.is-large {
+  max-width: $min-width-tablet;
+}
+
+.is-medium {
+  max-width: 500px;
+
+  @include media('<tablet') {
+    @include alignCenter;
+  }
+}
+
+.is-small {
+  max-width: 330px;
+
+  @include media('<phone') {
+    @include alignCenter;
+  }
+}

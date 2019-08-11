@@ -12,6 +12,8 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ### Typography
 
+### Widths
+
 ---
 
 _[Table of contents](../../../README.md#structure)_

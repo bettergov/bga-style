@@ -1,19 +1,30 @@
-.fullWidth {
-  @include fullWidth;
-}
-
-.fitOuter {
+.fit-outer {
   @include fitOuter;
 }
 
-.fitInner {
+.fit-inner {
   @include fitInner;
 }
 
-.fitOuter.art > .caption {
-  @include fitInner;
-}
-
-.alignCenter {
+// Alignment classes
+.align-center {
   @include alignCenter;
+}
+
+.align-right {
+  float: right;
+  margin-left: 1rem;
+
+  @include media('<phone') {
+    @include alignCenter;
+  }
+}
+
+.align-left {
+  float: left;
+  margin-right: 1rem;
+
+  @include media('<phone') {
+    @include alignCenter;
+  }
 }
