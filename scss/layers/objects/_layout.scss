@@ -2,7 +2,7 @@ article.main {
   // box-sizing: content-box;
   width: $max-outer-content-width;
   max-width: 100%;
-  @include margin-auto;
+  @include marginAuto;
   padding-left: $content-padding;
   padding-right: $content-padding;
 

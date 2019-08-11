@@ -6,7 +6,13 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ## In this layer
 
+### Vendor
+
+Vendor tools, including [`include-media`](https://include-media.com/).
+
 ### Mixins
+
+Mixin utilities for global reuse.
 
 ---
 

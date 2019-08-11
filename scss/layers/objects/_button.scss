@@ -5,7 +5,7 @@
   background: #5b7383;
   color: white;
   padding: 0.5rem 0.5rem 0.3rem;
-  @include margin-auto;
+  @include marginAuto;
   transition: background 0.25s;
 
   &:hover {

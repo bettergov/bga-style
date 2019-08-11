@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Significant overhaul of `layers/elements/link`
 - Set html font-size using percentages
 - Renamed lots of variables in `layers/settings`
+- Renamed mixins in `layers/tools` to use camelCase
 
 ### Deleted
 

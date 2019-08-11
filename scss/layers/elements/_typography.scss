@@ -82,7 +82,7 @@ h6 {
 
 // Blockquote
 blockquote {
-  @include fit-paragraph;
+  @include fitParagraph;
   margin: 0 0 $spacing-standard;
 
   font-family: $font-family-sans;

@@ -20,7 +20,7 @@
     cursor: pointer;
   }
   a {
-    @include clear-link;
+    @include clearLink;
   }
   .share-menu {
     right: 0;

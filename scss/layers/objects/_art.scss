@@ -15,7 +15,7 @@
     max-width: 500px;
 
     @include media('<tablet') {
-      @include align-center;
+      @include alignCenter;
     }
   }
 
@@ -23,7 +23,7 @@
     max-width: 330px;
 
     @include media('<phone') {
-      @include align-center;
+      @include alignCenter;
     }
   }
 
@@ -43,10 +43,10 @@
     &.large,
     &.full {
       @include media('<tablet') {
-        @include fit-outer;
+        @include fitOuter;
 
         > .caption {
-          @include fit-inner;
+          @include fitInner;
         }
       }
     }

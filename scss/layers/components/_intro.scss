@@ -61,9 +61,9 @@
   }
 
   .lede-image {
-    @include full-width;
+    @include fullWidth;
     .caption {
-      @include fit-inner;
+      @include fitInner;
     }
   }
 }
@@ -93,7 +93,7 @@
     .lede-copy {
       position: relative;
       color: $primary-text-color;
-      @include reset-absolute;
+      @include resetAbsolute;
     }
   }
 }
@@ -101,11 +101,11 @@
 // Split headers
 .header--split-right,
 .header--split-left {
-  @include full-width;
+  @include fullWidth;
   margin-top: 0 !important;
   .caption,
   .lede-copy {
-    @include fit-inner;
+    @include fitInner;
   }
   @include media('>=tablet') {
     display: flex;

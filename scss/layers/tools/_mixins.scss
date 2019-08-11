@@ -8,26 +8,28 @@
 }
 
 // Margin auto
-@mixin margin-auto {
+@mixin marginAuto {
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
 // Center
-@mixin align-center {
+@mixin alignCenter {
   clear: both !important;
   float: none !important;
-  @include margin-auto;
+  @include marginAuto;
 }
 
-// Clear default link behavior
-@mixin clear-link {
-  background: none;
-  padding: 0;
+// Reset absolute
+@mixin resetAbsolute {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 // Full width override
-@mixin full-width {
+@mixin fullWidth {
   width: calc(100% + 2 * #{$content-padding});
   max-width: calc(100% + 2 * #{$content-padding});
   margin-left: -$content-padding;
@@ -42,8 +44,8 @@
 }
 
 // Fit paragraph
-@mixin fit-paragraph {
-  @include media('>=tablet') {
+@mixin fitParagraph {
+  @include media('>=tablet', '<desktop') {
     max-width: $paragraph-width-tablet;
   }
   @include media('>=desktop') {
@@ -52,7 +54,7 @@
 }
 
 // Fit inner
-@mixin fit-inner {
+@mixin fitInner {
   max-width: $max-content-width;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -63,8 +65,8 @@
 }
 
 // Fit outer
-@mixin fit-outer {
-  @include full-width;
+@mixin fitOuter {
+  @include fullWidth;
 
   @include media('>=desktop') {
     width: auto;
@@ -74,35 +76,13 @@
 }
 
 // Short accent divider
-@mixin short-divider {
-  &:before {
+@mixin shortDivider {
+  &::before {
     height: 0.5rem;
     width: 8rem;
     background: $accent;
     display: block;
     content: '';
     margin-bottom: 1rem;
-  }
-}
-
-// Reset absolute
-@mixin reset-absolute {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-// Append right arrow icon
-@mixin append-right {
-  &::after {
-    font-family: 'bga-icons';
-    content: '\e801';
-    // font-size: .8em;
-    margin-left: 0.2em;
-    // background: $alt-black;
-    // border-radius: 2px;
-    // color: $off-white;
-    // padding: .2rem;
   }
 }

@@ -3,6 +3,6 @@
   hr,
   ul,
   ol {
-    @include fit-paragraph;
+    @include fitParagraph;
   }
 }

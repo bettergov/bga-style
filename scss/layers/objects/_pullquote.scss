@@ -5,7 +5,7 @@
   @extend .art.small;
   @extend .art.align-right;
 
-  @include short-divider;
+  @include shortDivider;
 
   .quote {
     font-weight: 700;

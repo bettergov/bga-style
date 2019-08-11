@@ -1,19 +1,19 @@
-.full-width {
-  @include full-width;
+.fullWidth {
+  @include fullWidth;
 }
 
-.fit-outer {
-  @include fit-outer;
+.fitOuter {
+  @include fitOuter;
 }
 
-.fit-inner {
-  @include fit-inner;
+.fitInner {
+  @include fitInner;
 }
 
-.fit-outer.art > .caption {
-  @include fit-inner;
+.fitOuter.art > .caption {
+  @include fitInner;
 }
 
-.align-center {
-  @include align-center;
+.alignCenter {
+  @include alignCenter;
 }

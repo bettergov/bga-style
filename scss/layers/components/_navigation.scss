@@ -8,7 +8,7 @@ nav.global {
   font-size: 0.9em;
   font-family: $font-family-sans;
   a {
-    @include clear-link;
+    @include clearLink;
     &:hover,
     &:focus {
       text-decoration: none;

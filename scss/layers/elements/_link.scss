@@ -34,6 +34,12 @@
   }
 }
 
+// Clear default link behavior
+@mixin clearLink {
+  background: unset;
+  text-shadow: unset;
+}
+
 a:link {
   color: currentColor;
   @include linkUnderline($link);
@@ -50,6 +56,5 @@ a:visited {
 }
 
 .without-underline:link {
-  background: unset;
-  text-shadow: unset;
+  @include clearLink;
 }
