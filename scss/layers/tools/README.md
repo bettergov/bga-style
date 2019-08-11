@@ -10,6 +10,17 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 Vendor tools, including [`include-media`](https://include-media.com/).
 
+### Icons
+
+Helper to load bga-fontello-icons and include them using their names.
+
+```scss
+// Example use
+.share-facebook::before {
+  @include icon('facebook');
+}
+```
+
 ### Mixins
 
 Mixin utilities for global reuse.

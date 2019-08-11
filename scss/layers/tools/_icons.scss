@@ -1,0 +1,35 @@
+@import url('https://media.bettergov.org/bga-fontello-icons/css/bga-icons.css');
+
+// preview icons at https://media.bettergov.org/bga-fontello-icons/demo.html
+
+$icons: (
+  'bga-logo': '\e800',
+  'doc': '\e805',
+  'email': '\f0e0',
+  'headphones': '\e810',
+  'print': '\e80f',
+  'share': '\e80e',
+  // brands
+    'facebook': '\f09a',
+  'twitter': '\f099',
+  // arrows
+    'up': '\e804',
+  'right': '\e801',
+  'down': '\e803',
+  'left': '\e802',
+  // carets
+    'up-caret': '\e808',
+  'right-caret': '\e80a',
+  'down-caret': '\e807',
+  'left-caret': '\e80d',
+  // chyrons
+    'up-open': '\e808',
+  'right-open': '\e80a',
+  'down-open': '\e806',
+  'left-open': '\e80a'
+);
+
+@mixin icon($iconName) {
+  font-family: 'bga-icons';
+  content: map-get($icons, $iconName);
+}

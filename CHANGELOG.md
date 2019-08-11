@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added variables `$background-color` and `$selection-color`
 - Docs!
 - Made the package easier to import by defining `sass` and `style` in `package.json`
+- Added BGA icon mixin
 
 ### Changed
 
