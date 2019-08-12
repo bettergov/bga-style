@@ -24,12 +24,14 @@ $card-border-color: $light-gray !default;
   }
 }
 
-.card__subtitle {
+.card-subtitle {
+  @extend %h4;
   text-transform: uppercase;
   font-size: 0.9em;
   margin-bottom: 0.2em;
 }
 
-.card__title {
+.card-title {
+  @extend %h3;
   margin-bottom: 0.4em;
 }

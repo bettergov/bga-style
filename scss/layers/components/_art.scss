@@ -3,14 +3,14 @@
   @include media('<tablet') {
     @include fitOuter;
 
-    .caption {
+    figcaption {
       @include fitInner;
     }
   }
 }
 
 // Photo set
-.photo-set > .images {
+.photo-set {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -19,41 +19,27 @@
     margin-right: 0.5rem;
   }
 
-  + .caption {
+  figcaption {
     margin-top: 0.75em;
+    flex: 0 0 100%;
   }
 }
 
 // Document
-.doc {
-  &.small {
-    display: flex;
-  }
-
-  .doc__link {
-    background: none;
-    margin-right: 1em;
-  }
-
-  .doc__img {
-    box-shadow: 5px 5px 15px #888888;
-
-    &:hover {
-      box-shadow: 5px 5px 20px #888888;
-      opacity: 0.95;
-    }
-  }
+.doc.is-small {
+  display: flex;
 }
 
-.caption {
-  font-family: $font-family-sans;
-  font-size: 0.8rem;
-  line-height: 1.2;
-  margin-top: 0.25em;
-  color: $secondary-text-color;
+.doc-link {
+  background: none;
+  margin-right: 1em;
 }
 
-.cutline {
-  font-size: 0.8rem;
-  font-weight: 300;
+.doc-img {
+  box-shadow: 5px 5px 15px #888888;
+
+  &:hover {
+    box-shadow: 5px 5px 20px #888888;
+    opacity: 0.95;
+  }
 }

@@ -2,14 +2,14 @@
   margin: 0 0 1.2rem;
   display: inline-block;
   font-weight: bold;
+
+  // Append right arrow icon
+  > a::after {
+    @include icon('right');
+    margin-left: 0.2em;
+  }
 }
 
-// Append right arrow icon
-.link__text::after {
-  @include icon('right');
-  margin-left: 0.2em;
-}
-
-.link--large {
+.link-large {
   font-size: 1.5rem;
 }

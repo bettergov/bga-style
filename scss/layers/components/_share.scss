@@ -10,16 +10,20 @@
   position: absolute;
   font-size: 1.5rem;
   transition: all 0.4s;
+
   &.active {
     visibility: visible;
     opacity: 1;
   }
+
   a:hover {
     opacity: 1 !important;
+
     i:before {
       opacity: 1;
     }
   }
+
   i {
     background: coral;
     color: white;
@@ -27,20 +31,25 @@
     height: 1.6em;
     width: 1.6em;
     display: block; // border-radius: 50%;
+
     &:before {
       transition: opacity 0.4s;
       opacity: 0.8;
     }
   }
+
   .icon--facebook {
     background: $facebook-blue;
   }
+
   .icon--twitter {
     background: $twitter-blue;
   }
+
   .icon--email {
     background: $dark-gray;
   }
+
   .icon--print {
     background: $medium-gray;
   }

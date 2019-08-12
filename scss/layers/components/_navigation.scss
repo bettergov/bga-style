@@ -1,51 +1,60 @@
 nav.global {
-  // background: $transparent;
   border-bottom: 1px solid rgba(180, 180, 180, 0.35);
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-family: $font-family-sans;
+
   a {
     @include clearLink;
+
     &:hover,
     &:focus {
       text-decoration: none;
       opacity: 0.8;
     }
   }
+
   .navbar-brands {
     display: flex;
     align-items: center;
   }
+
   .navbar-brand {
     a {
       transition: none;
+
       &:hover {
         opacity: 1;
       }
     }
   }
+
   .icon--bga-logo {
     color: $bga-blue;
     font-size: 2em;
     height: 1em;
     width: 2em;
   }
+
   .share {
     border: none;
     background: none;
     font-size: 1.2em;
     color: $medium-gray;
     cursor: pointer;
+
     &:hover {
       color: $dark-gray;
     }
   }
+
   .share-menu {
     right: 0;
     top: 1.9rem;
+
     &.active {
       top: 2.9rem;
     }
