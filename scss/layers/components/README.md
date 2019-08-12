@@ -12,6 +12,8 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 #### Usage
 
+![Photo component](../../../static/component-photo.png)
+
 ```html
 <!-- Photo -->
 <figure class="photo">
@@ -23,14 +25,7 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 </figure>
 ```
 
-```html
-<!-- Photo set -->
-<figure class="photo-set">
-  <img src="..." alt="..." />
-  <img src="..." alt="..." />
-  <figcaption>...</figcaption>
-</figure>
-```
+![Document component](../../../static/component-doc.png)
 
 ```html
 <!-- Document -->
@@ -41,6 +36,8 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
   <figcaption>...</figcaption>
 </figure>
 ```
+
+![Small document component](../../../static/component-doc-small.png)
 
 ```html
 <!-- Small document -->
@@ -56,6 +53,8 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 #### Usage
 
+![Card component](../../../static/component-card.png)
+
 ```html
 <div class="card">
   <p class="card-subtitle">...</p>
@@ -67,6 +66,8 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 ### Dropcap
 
 #### Usage
+
+![Dropcap component](../../../static/component-dropcap.png)
 
 ```html
 <p>
@@ -132,6 +133,8 @@ TK
 
 #### Usage
 
+![Link component](../../../static/component-link.png)
+
 ```html
 <!-- Link -->
 <div class="link">
@@ -140,6 +143,8 @@ TK
   </a>
 </div>
 ```
+
+![Large link component](../../../static/component-link-large.png)
 
 ```html
 <!-- Large link -->
@@ -193,6 +198,8 @@ TK
 
 #### Usage
 
+![Pullquote component](../../../static/component-pullquote.png)
+
 ```html
 <aside class="pullquote">
   <div class="quote">“...”</div>
@@ -209,22 +216,6 @@ TK
 #### Usage
 
 See [Navigation](#navigation) and [Footer](#footer).
-
-### Sidebar
-
-This is a sidebar in the newspaper sense — a short related story. It includes an optional “read more” accordion.
-
-```html
-<aside class="sidebar">
-  <!-- initial content -->
-  ...
-
-  <!-- initially hidden content -->
-  <div class="more">...</div>
-
-  <button class="expand">Read more <i class="icon--down-caret"></i></button>
-</aside>
-```
 
 ---
 

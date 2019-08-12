@@ -1,3 +1,7 @@
+figure {
+  margin: $spacing-standard 0;
+}
+
 figcaption {
   font-family: $font-family-sans;
   font-size: 0.8rem;
@@ -11,6 +15,6 @@ figcaption {
 }
 
 .cutline {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-weight: 300;
 }

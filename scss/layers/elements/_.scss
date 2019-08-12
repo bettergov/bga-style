@@ -1,13 +1,10 @@
 @import 'button';
 @import 'details';
+@import 'figure';
 @import 'headings';
 @import 'link';
 @import 'table';
 @import 'typography';
-
-figure img {
-  width: 100%;
-}
 
 section {
   margin: 2rem 0;

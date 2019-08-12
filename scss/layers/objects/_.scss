@@ -1,2 +1,7 @@
 @import 'container';
 @import 'story';
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  display: inherit;
+}

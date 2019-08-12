@@ -1,7 +1,12 @@
+$dropcap-font-family: inherit !default;
+$dropcap-color: currentColor !default;
+
 .dropcap {
+  color: $dropcap-color;
+  font-family: $dropcap-font-family;
   font-size: calc(2em * (#{$paragraph-line-height} + 0.22)); // Magic number
   float: left;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1ch;
   margin-right: 10px;
 }

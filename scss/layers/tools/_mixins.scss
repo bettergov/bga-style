@@ -76,11 +76,11 @@
 }
 
 // Short accent divider
-@mixin shortDivider {
+@mixin shortDivider($color: $accent-color) {
   &::before {
     height: 0.5rem;
     width: 8rem;
-    background: $accent;
+    background: $color;
     display: block;
     content: '';
     margin-bottom: 1rem;

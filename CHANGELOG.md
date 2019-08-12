@@ -7,10 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Renamed `$accent` to `$accent-color`
+- Numerous tweaks to `layers/components`
+
 ### Deleted
 
 - Deleted `layers/components/sidebar`
 - Deleted photo-set from `layers/components/art`
+- Deleted `$highlight` from `layers/settings/colors`
 
 ## [2.0.0] - 2019-08-11
 

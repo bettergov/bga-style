@@ -1,9 +1,11 @@
 $card-background-color: $off-white !default;
 $card-border-color: $light-gray !default;
+$card-text-color: transparentize($primary-text-color, 0.3) !default;
 
 .card {
   background-color: $card-background-color;
   border-top: 4px solid $card-border-color;
+  color: $card-text-color;
   font-family: $font-family-sans;
   font-size: 0.95rem;
   margin-top: $spacing-standard;

@@ -1,8 +1,14 @@
-.pullquote {
-  width: 100%;
-  margin-bottom: 1rem;
+$pullquote-background-color: transparent !default;
+$pullquote-border-color: $accent-color !default;
+$pullquote-text-color: $secondary-text-color !default;
 
-  @include shortDivider;
+.pullquote {
+  background: $pullquote-background-color;
+  color: $pullquote-text-color;
+  margin-bottom: 1rem;
+  width: 100%;
+
+  @include shortDivider($pullquote-border-color);
 
   .quote {
     font-weight: 700;

@@ -6,6 +6,7 @@ nav.global {
   align-items: center;
   font-size: 0.9rem;
   font-family: $font-family-sans;
+  position: relative;
 
   a {
     @include clearLink;
@@ -39,7 +40,7 @@ nav.global {
     width: 2em;
   }
 
-  .share {
+  .share-toggle {
     border: none;
     background: none;
     font-size: 1.2em;
@@ -52,11 +53,12 @@ nav.global {
   }
 
   .share-menu {
+    position: absolute;
     right: 0;
     top: 1.9rem;
 
     &.active {
-      top: 2.9rem;
+      top: 100%;
     }
   }
 }

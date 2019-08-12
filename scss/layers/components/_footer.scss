@@ -8,13 +8,14 @@
   display: flex;
   justify-content: space-between;
   align-items: last baseline;
+  position: relative;
 
   .logo {
     color: white;
     font-size: 1.5em;
   }
 
-  .share {
+  .share-toggle {
     color: white;
     border: none;
     background: none;
@@ -30,7 +31,7 @@
     right: 0;
     bottom: 2rem;
     &.active {
-      bottom: 3rem;
+      bottom: 100%;
     }
   }
 }

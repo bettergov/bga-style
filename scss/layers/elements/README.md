@@ -28,6 +28,10 @@ The [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/deta
 </details>
 ```
 
+### Figure
+
+Styles for [`<figure>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) and [`<figcaption>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption).
+
 ### Headings
 
 Heading elements `<h1>` through `<h6>`.

@@ -50,7 +50,7 @@ hr {
 // Preformatted
 pre {
   background: $off-white;
-  border: 5px double desaturate($accent, 50%);
+  border: 5px double desaturate($accent-color, 50%);
   padding: 2em;
   white-space: pre-wrap;
 }
