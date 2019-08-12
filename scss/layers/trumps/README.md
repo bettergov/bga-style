@@ -8,11 +8,31 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 ## In this layer
 
-### Layout
+### Align
+
+- `.align-left`: Floats left tablet up, center-aligned on mobile.
+- `.align-left-mobile`: Floats left on all screens, including mobile.
+- `.align-right`: Floats right tablet up, center-aligned on mobile.
+- `.align-right-mobile`: Floats right on all screens, including mobile.
+- `.align-center`
 
 ### Typography
 
+- Font families: `.serif`, `.sans`, `.condensed`
+- Emphasis: `.bold`, `.italic`, `.caps`/`.uppercase`, `.underline`
+- Text alignment: `.text-left`, `.text-center`, `.text-right`
+- Overflow: `.nowrap`, `.truncate`
+- Lists: `.list-unstyled`
+
 ### Widths
+
+- `.is-full`/`.full-width`
+- `.is-jumbo`
+- `.is-large`
+- `.is-medium`
+- `.is-small`
+- `.fit-outer`
+- `.fit-inner`
 
 ---
 

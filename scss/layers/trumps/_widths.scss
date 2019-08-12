@@ -1,3 +1,10 @@
+$widths: (
+  'jumbo': $max-outer-content-width,
+  'large': $min-width-tablet,
+  'medium': 500px,
+  'small': 330px
+) !default;
+
 // Width classes
 .is-full,
 .full-width {
@@ -5,25 +12,25 @@
 }
 
 .is-jumbo {
-  max-width: $max-outer-content-width;
+  max-width: map-get($widths, 'jumbo');
 }
 
 .is-large {
-  max-width: $min-width-tablet;
+  max-width: map-get($widths, 'large');
 }
 
 .is-medium {
-  max-width: 500px;
-
-  @include media('<tablet') {
-    @include alignCenter;
-  }
+  max-width: map-get($widths, 'medium');
 }
 
 .is-small {
-  max-width: 330px;
+  max-width: map-get($widths, 'small');
+}
 
-  @include media('<phone') {
-    @include alignCenter;
-  }
+.fit-outer {
+  @include fitOuter;
+}
+
+.fit-inner {
+  @include fitInner;
 }

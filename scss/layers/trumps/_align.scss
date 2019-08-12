@@ -1,0 +1,34 @@
+// Alignment classes
+.align-center {
+  @include alignCenter;
+}
+
+.align-right {
+  float: right;
+  margin-left: 1rem;
+
+  &:not(.align-right-mobile) {
+    @include media('<phone') {
+      @include alignCenter;
+    }
+  }
+}
+
+.align-right-mobile {
+  @extend .align-right;
+}
+
+.align-left {
+  float: left;
+  margin-right: 1rem;
+
+  &:not(.align-left-mobile) {
+    @include media('<phone') {
+      @include alignCenter;
+    }
+  }
+}
+
+.align-left-mobile {
+  @extend .align-left;
+}
