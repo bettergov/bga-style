@@ -12,6 +12,7 @@
     margin-bottom: 1rem;
     font-weight: normal;
     font-size: 1em;
+
     @include media('>=desktop') {
       font-size: 1.2em;
     }
@@ -19,6 +20,7 @@
 
   .bylines {
     font-style: italic;
+
     > a {
       font-weight: bold;
       font-style: normal;
@@ -26,12 +28,13 @@
   }
 
   .info {
+    font-size: 0.85em;
+
     p,
     a {
       color: $secondary-text-color;
       font-family: $font-family-sans;
     }
-    font-size: 0.85em;
   }
 
   > header {
@@ -46,6 +49,7 @@
 .lede-image {
   position: relative;
   margin-bottom: 1rem;
+  margin-top: 0;
 
   .caption {
     text-align: right;
@@ -64,6 +68,13 @@
 
   .lede-image {
     @include fullWidth;
+
+    img {
+      min-height: 30vh;
+      max-height: 100vh;
+      object-fit: cover;
+    }
+
     .caption {
       @include fitInner;
     }
@@ -84,7 +95,9 @@
 }
 
 .header--invert {
-  color: white;
+  $color: $primary-text-color !default;
+  color: invert($color);
+
   .kicker {
     color: currentColor;
   }
@@ -105,14 +118,17 @@
 .header--split-left {
   @include fullWidth;
   margin-top: 0 !important;
+
   .caption,
   .lede-copy {
     @include fitInner;
   }
+
   @include media('>=tablet') {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+
     .caption,
     .lede-copy {
       width: 100%;
@@ -120,16 +136,19 @@
       margin-left: 0;
       margin-right: 0;
     }
+
     .lede-image {
       align-self: stretch;
       min-height: 40vw;
       max-height: 80vh;
     }
+
     .lede-image > img {
       object-fit: cover;
       object-position: right;
       height: 100%;
     }
+
     .lede-copy {
       padding: 1rem;
     }
@@ -139,6 +158,7 @@
 .header--split-right {
   @include media('>=tablet') {
     flex-direction: row-reverse;
+
     .caption {
       text-align: left;
     }
