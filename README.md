@@ -19,7 +19,9 @@ Styles to jumpstart your BGA page, built in SCSS, modeled after [Inverted Triang
 
 **ITCSS** is a methodology developed by Harry Roberts that models our project as an upside-down triangle of increasing specificity.
 
-![Diagram of Inverted Triangle CSS](static/itcss-diagram.jpg)
+<p align="center">
+  <img width="460" height="300" src="static/itcss-diagram.jpg" alt="Diagram of Inverted Triangle CSS">
+</p>
 
 Each layer is organized into its own subdirectory (e.g. `layers/settings`) with a hack-ish index file (e.g. `layers/settings/_.scss`) and a README.
 
