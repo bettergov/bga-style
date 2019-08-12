@@ -127,7 +127,59 @@ You can enable a sticky footer (i.e. at the bottom of the page, even if the page
 
 #### Usage
 
-TK
+![Intro component](../../../static/component-intro.png)
+
+```html
+<section class="intro">
+  <header class="">
+    <figure class="lede-image">
+      <img src="https://via.placeholder.com/800x450" />
+
+      <figcaption class="caption">
+        A caption for our header image.
+        <span class="cutline">Sample photographer | DNE</span>
+      </figcaption>
+    </figure>
+
+    <div class="lede-copy">
+      <h1 class="hed">
+        Tons and tons of Chicago recycling isn’t getting recycled. And a private
+        company is paid for it — twice.
+      </h1>
+      <p class="dek">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+        pellentesque leo nibh, at aliquet lorem viverra vitae. Morbi et laoreet
+        odio. Phasellus ut congue dolor.
+      </p>
+      <div class="bylines">
+        Madison Hopkins, Better Government Association
+      </div>
+    </div>
+  </header>
+
+  <hr />
+
+  <div class="info">
+    <p>
+      <span class="timestamp">
+        <time datetime="2018-10-10T05:00-0500">October 10, 2018</time>
+      </span>
+    </p>
+  </div>
+</section>
+```
+
+#### Notes
+
+You can apply several different classes to the `<header>` element to change the styling.
+
+- `header--heroic`
+- `header--top`
+- `header--center`
+- `header--invert`
+- `header--drop-mobile`
+- `header--split-right`
+- `header--split-left`
 
 ### Link
 

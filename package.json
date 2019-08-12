@@ -1,6 +1,6 @@
 {
   "name": "bga-style",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "description": "SCSS styles for BGA.",
   "style": "scss/main.scss",
   "sass": "scss/main.scss",

@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.1] - 2019-08-12
+
+### Added
+
+- Documented intro component
+- Added overflow declarations to `<html>`
+
 ## [2.1.0] - 2019-08-12
 
 (Some of these changes are technically breaking, but they're so small, I'm changing it so soon, and there's no current production usage.)
