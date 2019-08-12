@@ -10,9 +10,23 @@ From [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-des
 
 A container for the page; supplies padding, margins and width.
 
+#### Usage
+
+```html
+<div class="page-container">
+  ...
+</div>
+```
+
 ### Story
 
 A container for a story; applies `@include fitParagraph` to particular selectors.
+
+```html
+<div class="story">
+  ...
+</div>
+```
 
 ---
 
