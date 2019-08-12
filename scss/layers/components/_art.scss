@@ -1,0 +1,45 @@
+// Photo
+.photo {
+  @include media('<tablet') {
+    @include fitOuter;
+
+    figcaption {
+      @include fitInner;
+    }
+  }
+}
+
+// Photo set
+.photo-set {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  img:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  figcaption {
+    margin-top: 0.75em;
+    flex: 0 0 100%;
+  }
+}
+
+// Document
+.doc.is-small {
+  display: flex;
+}
+
+.doc-link {
+  background: none;
+  margin-right: 1em;
+}
+
+.doc-img {
+  box-shadow: 5px 5px 15px #888888;
+
+  &:hover {
+    box-shadow: 5px 5px 20px #888888;
+    opacity: 0.95;
+  }
+}

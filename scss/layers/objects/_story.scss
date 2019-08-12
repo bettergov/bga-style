@@ -1,8 +1,15 @@
+%fitParagraph {
+  @include fitParagraph;
+}
+
 .story > {
   p,
   hr,
   ul,
-  ol {
-    @include fit-paragraph;
+  ol,
+  details,
+  blockquote,
+  .subhed {
+    @extend %fitParagraph;
   }
 }

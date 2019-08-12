@@ -1,0 +1,37 @@
+$button-text-color: $off-white !default;
+$button-bg-color: #5b7383 !default;
+$button-bg-color-active: darken($button-bg-color, 18%) !default;
+
+@mixin unstyleButton {
+  background: unset;
+  border: unset;
+  color: unset;
+  font-weight: unset;
+  padding: unset;
+  text-transform: unset;
+  transition: unset;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  padding: 0.5rem;
+  transition: background-color 0.25s;
+  border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    background: $button-bg-color-active;
+    color: $button-text-color;
+  }
+
+  &.unstyled {
+    @include unstyleButton;
+  }
+}
+
+.button {
+  @extend button;
+}

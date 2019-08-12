@@ -1,0 +1,12 @@
+@import 'art';
+@import 'card';
+@import 'dropcap';
+@import 'footer';
+@import 'intro';
+@import 'link';
+@import 'navigation';
+@import 'pullquote';
+
+.main-contents {
+  @extend .page-container;
+}

@@ -1,29 +1,60 @@
-/* We achieve a background animation effect by manipulating the background position.
-See https://codersblock.com/blog/gradient-animation-trick/ */
-a {
-  color: currentColor;
-  background-image: linear-gradient(
-    to top,
-    $highlight 0%,
-    $highlight 35%,
-    transparent 35%,
-    transparent 100%
-  );
-  background-size: auto 225%;
-  background-position: 0 50%;
-  text-decoration: none;
+@mixin textShadowToCropUnderline($color) {
+  text-shadow: 0.03em 0 $color, -0.03em 0 $color, 0 0.03em $color,
+    0 -0.03em $color, 0.06em 0 $color, -0.06em 0 $color, 0.09em 0 $color,
+    -0.09em 0 $color, 0.12em 0 $color, -0.12em 0 $color, 0.15em 0 $color,
+    -0.15em 0 $color;
+}
 
-  &:hover,
-  &:focus {
-    color: currentColor;
-    text-decoration: none;
-    background-position: 0 100%;
+@mixin linkUnderline($color: currentColor, $bgColor: $background-color) {
+  // see https://eager.io/blog/smarter-link-underlines/
+  text-decoration: none;
+  @include textShadowToCropUnderline($bgColor);
+  background-image: linear-gradient($bgColor, $bgColor),
+    linear-gradient($bgColor, $bgColor), linear-gradient($color, $color);
+  background-size: 0.05em 2px, 0.05em 2px, 1.5px 1.5px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0% 93%, 100% 93%, 0% 93%;
+
+  &::selection {
+    @include textShadowToCropUnderline($selection-color);
+    background: $selection-color;
+  }
+
+  &:before,
+  &:after,
+  *,
+  *:before,
+  *:after {
+    text-shadow: none;
+  }
+
+  @media print {
+    background: unset;
+    text-shadow: unset;
   }
 }
 
-a,
-a::before,
-a::after,
-button {
-  transition: background-position 0.25s ease;
+// Clear default link behavior
+@mixin clearLink {
+  background: unset;
+  text-shadow: unset;
+}
+
+a:link {
+  color: currentColor;
+  @include linkUnderline($link);
+
+  &:hover,
+  &:focus {
+    color: $link;
+  }
+}
+
+a:visited {
+  color: purple;
+  @include linkUnderline(purple);
+}
+
+.without-underline:link {
+  @include clearLink;
 }

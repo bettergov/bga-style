@@ -1,14 +1,12 @@
 $max-outer-content-width: $min-width-desktop;
-$content-padding: 1rem;
+$content-padding: 1rem !default;
+
+// Max width on mobile
 $max-content-width: calc(100% - 2 * #{$content-padding});
+
+// Max width on desktop
 $desktop-max-content-width: calc(
   #{$min-width-desktop} - 2 * #{$content-padding}
 );
-// $desktop-content-padding: calc(
-//   (#{$max-outer-content-width - $max-content-width}) / 2
-// );
-// $desktop-content-padding-negative: calc(
-//   (#{$max-content-width - $max-outer-content-width}) / 2
-// );
 
-$spacing-standard: 1.2rem;
+$spacing-standard: 1.2rem !default;

@@ -1,7 +1,16 @@
-figure {
-  margin: 0;
+figcaption {
+  font-family: $font-family-sans;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  margin-top: 0.25em;
+  color: $secondary-text-color;
+}
 
-  img {
-    width: 100%;
-  }
+.caption {
+  @extend figcaption;
+}
+
+.cutline {
+  font-size: 0.8rem;
+  font-weight: 300;
 }

@@ -1,17 +1,19 @@
 // Footer
 .nav-bottom {
-  background-color: $bga-alt-black;
+  background-color: $alt-black;
   position: relative;
-  font-family: $condensed;
+  font-family: $font-family-condensed;
   text-align: left;
   padding: 0.5em 1rem;
   display: flex;
   justify-content: space-between;
   align-items: last baseline;
-  .bga-brand {
+
+  .logo {
     color: white;
     font-size: 1.5em;
   }
+
   .share {
     color: white;
     border: none;
@@ -19,9 +21,11 @@
     font-size: 1.2em;
     cursor: pointer;
   }
+
   a {
-    @include clear-link;
+    @include clearLink;
   }
+
   .share-menu {
     right: 0;
     bottom: 2rem;
@@ -33,20 +37,24 @@
 
 // Sticky footer
 // Footer is pinned to bottom, even if the content doesn't take up the whole page
-html {
-  position: relative;
-  min-height: 100%;
-}
+$is-footer-sticky: false !default;
 
-body {
-  padding-bottom: 3em;
-  margin-bottom: 0;
-}
+@if $is-footer-sticky {
+  html {
+    position: relative;
+    min-height: 100%;
+  }
 
-.nav-bottom {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3em;
-  width: 100%;
+  body {
+    padding-bottom: 3em;
+    margin-bottom: 0;
+  }
+
+  .nav-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3em;
+    width: 100%;
+  }
 }

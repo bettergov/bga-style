@@ -1,9 +1,0 @@
-// This is just a copy of _main.scss that uses webpack tilde import for the include-media dependency
-@import '~include-media/dist/include-media';
-@import 'layers/settings';
-@import 'layers/tools';
-@import 'layers/generic';
-@import 'layers/elements';
-@import 'layers/objects';
-@import 'layers/components';
-@import 'layers/trumps';

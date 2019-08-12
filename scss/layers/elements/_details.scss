@@ -1,5 +1,5 @@
-$details-inactive-color: gray !default;
-$details-active-color: #1a1a1a !default;
+$details-inactive-color: $medium-gray !default;
+$details-active-color: $alt-black !default;
 
 @keyframes det {
   0% {
@@ -11,18 +11,20 @@ $details-active-color: #1a1a1a !default;
 }
 
 details {
-  margin: 3rem 0 1.5rem;
+  margin: $spacing-standard 0;
   position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 // inactive styling of summary
 summary {
-  padding-top: 1.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
+  margin: 0 -1rem 1rem;
+  padding: 1rem;
 
-  border-top: solid 1px $details-inactive-color;
+  border-bottom: solid 1px $details-inactive-color;
   color: $details-inactive-color;
+  font-weight: bold;
   transition: color 0.3s ease, border-top-color 0.3s ease;
 
   cursor: pointer;
