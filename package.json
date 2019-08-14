@@ -1,6 +1,6 @@
 {
   "name": "bga-style",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "description": "SCSS styles for BGA.",
   "style": "scss/main.scss",
   "sass": "scss/main.scss",
@@ -10,5 +10,13 @@
   "private": true,
   "dependencies": {
     "include-media": "^1.4.9"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "node-sass-tilde-importer": "^1.0.2"
+  },
+  "scripts": {
+    "build": "node-sass scss/main.scss css/style.css --importer=node_modules/node-sass-tilde-importer",
+    "dev": "node-sass scss/main.scss css/style.css --importer=node_modules/node-sass-tilde-importer --watch"
   }
 }

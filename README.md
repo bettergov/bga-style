@@ -15,6 +15,12 @@ Styles to jumpstart your BGA page, built in SCSS, modeled after [Inverted Triang
 @import '~bga-style';
 ```
 
+## Developing
+
+```bash
+yarn dev
+```
+
 ## Structure
 
 **ITCSS** is a methodology developed by Harry Roberts that models our project as an upside-down triangle of increasing specificity.
